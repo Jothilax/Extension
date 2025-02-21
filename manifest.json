@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "MERN Productivity Tracker",
+    "version": "1.0",
+    "description": "A productivity tracker Chrome extension built with the MERN stack.",
+    "permissions": ["storage", "activeTab", "webNavigation"],
+    "host_permissions": ["http://localhost:5000/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }
+  }
